@@ -1,59 +1,52 @@
-.icon{
-    color: white;
+.icon {
+  color: white;
 }
 
-body{
-    width: 100%;
-    text-align: center;
-    align-items: center;
-    /* background: linear-gradient(to bottom, #87CEEB, #1E90FF); */
-    /* background: linear-gradient(to bottom, #DDDDDD, #999999); */
-    /* background: linear-gradient(to bottom, #8B008B, #FFD700); */
-    /* background: linear-gradient(to bottom, #FFA500 0%, #FF4500 50%, #FF8C00 100%); */
-    /* background: radial-gradient(circle, #FFD700, #FF4500); */
-    /* background: linear-gradient(to bottom, #EDEDED, #C4C4C4); */
-    background: linear-gradient(to bottom, #FFA500, #FF69B4, #800080);
-    /* background: linear-gradient(to bottom, #00BFFF, #4682B4); */
-    /* background: linear-gradient(to bottom, #E8D8B8, #C9E4CA); */
+body {
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
 
-}
-h1{
-    margin-top: 3%;
-}
-.grid{ 
-      margin-left: 37%;
-      display: grid;
-      grid-template-columns: repeat(3, 100px);
-      grid-template-rows: repeat(3, 100px);
-      grid-gap: 10px;
+  background-color: #f2f2f2;
 }
 
-.grid .box{
-     display:  flex;
-     justify-content: center;
-     align-items: center;
-     background-color: rgb(22, 205, 190);
-     font-size: 3rem;
+h1 {
+  margin-top: 3%;
+}
 
+.grid {
+  margin-left: 37%;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 10px;
+}
+
+.grid .box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(22, 205, 190);
+  font-size: 3rem;
 }
 
 #btn {
-    font-size: medium;
-    transition: transform 0.5s ease-in-out;
-    margin: 5px;
-  }
-  
+  font-size: medium;
+  transition: transform 0.5s ease-in-out;
+  margin: 5px;
+}
+
 #btn:hover {
-    transform: translateY(-10px);
-    /* You can adjust the -5px value to change how far up the button goes */
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 640px) {
+  body {
+    background-color: yellow;
   }
-  
-  @media screen and (max-width: 640px){
-    body {
-      background-color: yellow;
-      
-    }
-    .grid{
-        margin-left: 24%;
-    }
+
+  .grid {
+    margin-left: 24%;
   }
+}
